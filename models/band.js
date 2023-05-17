@@ -19,15 +19,15 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true
     },
-    name: {
+    band_name: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    genre: {
+    band_genre: {
         type: DataTypes.TEXT,
         allowNull: false
     },
-    available_start_time: {
+    start_time: {
         type: DataTypes.DATE,
         allowNull: false
     },

@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('Bands', [{
+    await queryInterface.bulkInsert('bands', [{
       band_name: 'One Republic',
       band_genre: 'Pop',
       start_time: '2023-05-01T12:00:00',
@@ -43,6 +43,7 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('Bands', null, {});
+    await queryInterface.bulkDelete('bands', null, {});
   }
 };
+

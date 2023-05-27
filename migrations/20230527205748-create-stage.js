@@ -3,18 +3,16 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('stages', {
-      id: {
+      stage_id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      stage_id: {
-        type: Sequelize.INTEGER
-      },
       stage_name: {
         type: Sequelize.STRING
-      } 
+      },
+    
     });
   },
   async down(queryInterface, Sequelize) {
